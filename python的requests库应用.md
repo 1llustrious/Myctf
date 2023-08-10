@@ -3,7 +3,7 @@
 ```python
 import requests
 
-url = "http://localhost:8024/"
+url = "http://localhost:9003/"
 
 response = requests.get(url=url)
 print(response.status_code)
@@ -14,7 +14,7 @@ print(response.text)
 ```python
 import requests
 
-url = "http://localhost:8024/"
+url = "http://localhost:9003/"
 data = {"usernmae":"admin","passwd":"123456"}
 response = requests.post(url=url,data=data)
 print(response.status_code)
@@ -25,7 +25,7 @@ print(response.text)
 ```python
 import requests
 
-url = "http://localhost:8024/"
+url = "http://localhost:9003/"
 data = {"usernmae":"admin","passwd":"123456"}
 proxies = {"http":"http://127.0.0.1:8080","https":"http://127.0.0.1:8080"}
 response = requests.post(url=url,data=data,proxies=proxies)
